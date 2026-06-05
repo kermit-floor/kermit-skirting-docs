@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kermit Berlin 100 Taş Polimer Kompozit Süpürgelik TBF</title>
+  <style>
+    /* Uses Kermit site font stack: Inter / Montserrat. Load these in your website theme if needed. */
+
+    :root {
+      --kermit-green: #2d422f;
+      --kermit-green-deep: #2f3933;
+      --kermit-sage: #89ad8c;
+      --kermit-sage-soft: #dce6dd;
+      --kermit-border: #dce3de;
+      --kermit-pale: #f0f2f0;
+      --kermit-pale-2: #f7faf7;
+      --kermit-pale-3: #e6ebe8;
+      --text: #3d4942;
+      --muted: #66736c;
+      --avoid-bg: #fbf8f6;
+      --practice-bg: #f4fbf5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #e8ebe8;
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    body { padding: 12mm 0; }
+
+    .page {
+      position: relative;
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto 12mm auto;
+      background: white;
+      overflow: hidden;
+      box-shadow: 0 6mm 20mm rgba(20, 35, 25, 0.16);
+    }
+
+    @page { size: A4; margin: 0; }
+
+    @media print {
+      html, body { background: white; padding: 0; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .page:last-child { page-break-after: auto; break-after: auto; }
+    }
+
+    .logo {
+      position: absolute;
+      left: 18mm;
+      top: 15mm;
+      width: 44mm;
+      height: auto;
+      z-index: 2;
+    }
+
+    .top-note {
+      position: absolute;
+      top: 15.2mm;
+      right: 18mm;
+      width: 70mm;
+      text-align: right;
+      color: var(--muted);
+      font-size: 8pt;
+      line-height: 1.45;
+      z-index: 2;
+    }
+    .top-note strong { display: block; color: var(--kermit-green); font-weight: 900; }
+
+    .footer {
+      position: absolute;
+      left: 18mm;
+      right: 18mm;
+      bottom: 10mm;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8mm;
+      padding-top: 3mm;
+      border-top: 0.35mm solid var(--kermit-border);
+      color: var(--muted);
+      font-size: 7pt;
+      line-height: 1.2;
+      z-index: 4;
+    }
+    .footer strong { color: var(--kermit-green); font-weight: 900; }
+    .page-no {
+      flex: 0 0 15mm;
+      text-align: right;
+      color: var(--kermit-green);
+      font-weight: 900;
+    }
+
+    .kicker {
+      position: absolute;
+      left: 18mm;
+      top: 38.3mm;
+      font-size: 8.2pt;
+      line-height: 1.2;
+      letter-spacing: 1.7pt;
+      color: var(--kermit-sage);
+      font-weight: 900;
+    }
+    .section-title {
+      position: absolute;
+      left: 18mm;
+      top: 44.5mm;
+      margin: 0;
+      font-size: 17pt;
+      line-height: 1.18;
+      color: var(--kermit-green);
+      font-family: Inter, Montserrat, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .orb {
+      position: absolute;
+      left: 132mm;
+      top: 175mm;
+      width: 112mm;
+      height: 112mm;
+      background: #f0f2f0;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .rounded { border: 0.35mm solid var(--kermit-border); border-radius: 5mm; }
+
+    /* Page 1 */
+    .cover-stripe { position:absolute; left:0; top:0; bottom:0; width:7mm; background:var(--kermit-green); }
+    .hero-panel {
+      position: absolute;
+      left: 18mm;
+      top: 38mm;
+      width: 174mm;
+      height: 165.3mm;
+      background: var(--kermit-sage-soft);
+      border: 0.35mm solid var(--kermit-border);
+      border-radius: 12mm;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .hero-panel::before {
+      content:"";
+      position:absolute;
+      right:-23mm;
+      top:-17.7mm;
+      width:88mm;
+      height:88mm;
+      border-radius:50%;
+      background:var(--kermit-sage);
+      opacity:.33;
+      z-index:0;
+    }
+    .hero-copy { position:absolute; left: 9.8mm; top: 0; width: 54mm; z-index:2; }
+    .hero-kicker {
+      position:absolute; left:0; top:10.1mm; font-size:7.4pt; line-height:1.35; letter-spacing:0.85pt; color:var(--kermit-sage); font-weight:900; white-space:nowrap;
+    }
+    .hero-name {
+      position:absolute; left:0; top:19.0mm;
+      color:var(--kermit-green);
+      font-family: Inter, Montserrat, sans-serif;
+      font-weight:900;
+      font-size:33pt;
+      line-height:.82;
+      letter-spacing:-0.07em;
+    }
+    .hero-desc {
+      position:absolute; left:0; top:47.5mm;
+      font-size:10.1pt;
+      line-height:1.42;
+      color:var(--text);
+      max-width:44mm;
+    }
+    .cover-pills { position:absolute; left:9.8mm; top:89.4mm; display:flex; flex-direction:column; gap:3.2mm; z-index:3; }
+    .cover-pill {
+      width:max-content;
+      min-width: 33mm;
+      padding:2.2mm 7mm;
+      border:0.35mm solid var(--kermit-border);
+      border-radius:9mm;
+      background:white;
+      color:var(--kermit-green);
+      font-size:7.4pt;
+      line-height:1;
+      font-weight:800;
+      box-shadow: inset 0 0 0 0.45mm #f8faf8;
+    }
+    .product-card {
+      position:absolute;
+      left:62.65mm;
+      top:9.85mm;
+      width:101.5mm;
+      height:116.6mm;
+      background:white;
+      border:0.35mm solid var(--kermit-border);
+      border-radius:8mm;
+      z-index:1;
+    }
+    .height-badge {
+      position:absolute;
+      left:119.9mm;
+      top:14.1mm;
+      width:40mm;
+      height:16.3mm;
+      padding:3.2mm 4mm;
+      background:white;
+      border:0.35mm solid var(--kermit-border);
+      border-radius:4mm;
+      z-index:3;
+    }
+    .height-badge strong { display:block; font-size:17.5pt; line-height:.9; color:var(--kermit-green); font-weight:900; letter-spacing:-.04em; }
+    .height-badge span { display:block; margin-top:1.4mm; font-size:7.2pt; color:var(--muted); }
+    .product-img { position:absolute; left:66mm; top:39.5mm; width:95mm; height:auto; z-index:2; }
+    .stats-row {
+      position:absolute;
+      left:9.8mm;
+      top:133.4mm;
+      display:grid;
+      grid-template-columns: repeat(4, 36.3mm);
+      gap:5.4mm;
+      z-index:3;
+    }
+    .stat-card { height:22mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:3.8mm; padding:4.1mm 3.6mm; }
+    .stat-card strong { display:block; font-size:14.5pt; line-height:.85; color:var(--kermit-green); font-weight:900; letter-spacing:-.04em; }
+    .stat-card span { display:block; margin-top:2.2mm; color:var(--muted); font-size:6.9pt; line-height:1.2; }
+    .cover-benefits {
+      position:absolute; left:18mm; top:210.3mm; width:174mm;
+      display:grid; grid-template-columns:repeat(4, 41.25mm); gap:3mm; z-index:2;
+    }
+    .mini-card { height:30mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:4.6mm; padding:5.5mm 4.2mm; }
+    .mini-card h3 { margin:0 0 2.2mm 0; font-size:9.5pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .mini-card p { margin:0; font-size:7.2pt; line-height:1.28; color:var(--muted); }
+
+    /* Page 2 */
+    .construction-card {
+      position:absolute; left:18mm; top:55.4mm; width:174mm; height:58.5mm;
+      background:white; border:0.35mm solid var(--kermit-border); border-radius:5mm; z-index:2;
+    }
+    .profile-img { position:absolute; left:25.4mm; top:59.65mm; width:43.75mm; height:auto; z-index:3; }
+    .construction-text { position:absolute; left:77.3mm; top:69.5mm; width:110mm; font-size:8.7pt; line-height:1.32; color:var(--text); z-index:3; }
+    .tag-row { position:absolute; left:77.3mm; top:85.4mm; display:flex; gap:5mm; z-index:3; }
+    .tag-row.second { top:93.9mm; gap:4.2mm; }
+    .tag {
+      width:28mm; padding:2.2mm 0; background:#e6f3e8; border-radius:9mm; text-align:center;
+      color:var(--kermit-green); font-size:7.1pt; line-height:1; font-weight:800;
+    }
+    .tag.wide { width:31mm; }
+    .spec-kicker { top:120.7mm; }
+    .spec-table-wrap {
+      position:absolute; left:18mm; top:126.9mm; width:174mm; z-index:2;
+      border:0.35mm solid var(--kermit-border); border-radius:5mm; overflow:hidden;
+    }
+    table.spec-table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:7.3pt; line-height:1; }
+    table.spec-table col:nth-child(1) { width:68mm; }
+    table.spec-table col:nth-child(2) { width:54mm; }
+    table.spec-table col:nth-child(3) { width:52mm; }
+    table.spec-table th {
+      height:7.45mm; padding:0 3mm; text-align:left; vertical-align:middle; background:var(--kermit-green); color:white; font-size:7.1pt; font-weight:900;
+    }
+    table.spec-table td { height:6.86mm; padding:0 3mm; vertical-align:middle; color:var(--muted); border-bottom:0.2mm solid var(--kermit-border); }
+    table.spec-table tr:nth-child(even) td { background:#f7faf7; }
+    table.spec-table tr:nth-child(odd) td { background:#e6ebe8; }
+    table.spec-table td:first-child, table.spec-table td:last-child { color:var(--kermit-green); font-weight:800; }
+    table.spec-table tr:last-child td { border-bottom:none; }
+
+    /* Page 3 */
+    .features-grid {
+      position:absolute; left:18mm; top:55.4mm; width:174mm; z-index:2;
+      display:grid; grid-template-columns:repeat(5, 32.4mm); grid-auto-rows:32.2mm; gap:3.0mm 3.05mm;
+    }
+    .feature-card { background:white; border:0.35mm solid var(--kermit-border); border-radius:4.5mm; text-align:center; padding-top:3.25mm; }
+    .feature-card img { width:16.6mm; height:auto; display:block; margin:0 auto 1.7mm; image-rendering:auto; }
+    .feature-card h3 { margin:0; font-size:7.3pt; line-height:1.05; color:var(--kermit-green); font-weight:900; }
+    .feature-card p { margin:1.35mm auto 0; max-width:26mm; font-size:6.9pt; line-height:1.13; color:var(--muted); }
+    .feature-card.short p { max-width:24mm; }
+    .info-card {
+      position:absolute; top:129.2mm; width:84.8mm; height:44.2mm;
+      background:#f7f8f7; border:0.35mm solid var(--kermit-border); border-radius:5mm; padding:4.3mm; z-index:2;
+    }
+    .info-card.left { left:18mm; } .info-card.right { left:107.25mm; }
+    .info-card h3 { margin:0 0 4mm 0; font-size:11pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .info-card p { margin:0; font-size:8.7pt; line-height:1.35; color:var(--text); }
+    .finish-tags { display:grid; grid-template-columns:repeat(6, 1fr); gap:1.4mm 1.6mm; margin-top:2.8mm; }
+    .finish-tags span { background:white; border:0.35mm solid var(--kermit-border); border-radius:8mm; color:var(--kermit-green); font-size:6.3pt; font-weight:900; text-align:center; padding:1.45mm 0; box-shadow: inset 0 0 0 .45mm #fafafa; white-space:nowrap; }
+    .finish-tags span:nth-child(-n+3) { grid-column:span 2; }
+    .finish-tags span:nth-child(4) { grid-column:2 / span 2; }
+    .finish-tags span:nth-child(5) { grid-column:4 / span 2; }
+    .compliance-row { position:absolute; left:18mm; top:179.9mm; display:grid; grid-template-columns:repeat(3,56mm); gap:3.0mm; z-index:2; }
+    .compliance-card { height:32.6mm; background:var(--kermit-green); color:white; border-radius:4mm; padding:4.2mm; }
+    .compliance-card h3 { margin:0 0 4mm 0; color:white; font-size:11pt; line-height:1; font-weight:800; letter-spacing:-.03em; }
+    .compliance-card p { margin:0; color:white; font-size:8.7pt; line-height:1.35; opacity:.92; }
+    .desc-row { position:absolute; left:18mm; top:219.1mm; display:grid; grid-template-columns:repeat(2,84.8mm); gap:4.5mm; z-index:2; }
+    .desc-card { height:32.75mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:5mm; padding:4.2mm; }
+    .desc-card h3 { margin:0 0 4mm 0; font-size:11pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .desc-card p { margin:0; font-size:8.7pt; line-height:1.35; color:var(--text); }
+
+    /* Page 4 */
+    .steps-row { position:absolute; left:18mm; top:55.4mm; display:grid; grid-template-columns:repeat(4,41.25mm); gap:3mm; z-index:2; }
+    .step-card { position:relative; height:36mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:4.6mm; padding:4mm 3.2mm; }
+    .step-card h3 { margin:0 0 3mm; font-size:8pt; line-height:1; color:var(--kermit-green); font-weight:800; }
+    .step-card p { margin:0; font-size:7pt; line-height:1.32; color:var(--muted); }
+    .step-card .num { position:absolute; right:4mm; top:3mm; color:#cbd7ce; font-size:16.5pt; line-height:1; font-weight:900; letter-spacing:-.05em; }
+    .practice-card, .avoid-card {
+      position:absolute; top:97.9mm; width:85mm; height:51mm; border:0.35mm solid var(--kermit-border); border-radius:5mm; padding:4.2mm; z-index:2;
+    }
+    .practice-card { left:18mm; background:var(--practice-bg); }
+    .avoid-card { left:107mm; background:var(--avoid-bg); }
+    .practice-card h3, .avoid-card h3 { margin:0 0 2.5mm; font-size:10.4pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .practice-card ul, .avoid-card ul { margin:0; padding-left:5mm; font-size:8.1pt; line-height:1.25; color:var(--text); }
+    .practice-card li, .avoid-card li { margin:0 0 1.45mm 0; }
+    .practice-card strong { color:var(--kermit-green); font-weight:800; }
+    .storage-row { position:absolute; left:18mm; top:155.4mm; display:grid; grid-template-columns:repeat(3,56mm); gap:3mm; z-index:2; }
+    .storage-card { height:32.7mm; background:#f7f8f7; border:0.35mm solid var(--kermit-border); border-radius:4.5mm; padding:4.2mm; }
+    .storage-card h3 { margin:0 0 4mm; color:var(--kermit-green); font-size:11pt; line-height:1; font-weight:800; letter-spacing:-.02em; }
+    .storage-card p { margin:0; font-size:8.7pt; line-height:1.35; color:var(--text); }
+    .doc-kicker { top:195mm; }
+    .doc-row { position:absolute; left:18mm; top:201.2mm; display:grid; grid-template-columns:repeat(4,41.85mm); gap:2.2mm; z-index:2; }
+    .doc-card { height:16mm; background:#f7f8f7; border:0.35mm solid var(--kermit-border); border-radius:3.5mm; padding:3mm; }
+    .doc-card .label { display:block; color:var(--muted); font-size:6.4pt; line-height:1; letter-spacing:.8pt; }
+    .doc-card strong { display:block; margin-top:1.5mm; color:var(--kermit-green); font-size:7.3pt; line-height:1.05; font-weight:900; }
+    .notice {
+      position:absolute; left:18mm; top:220mm; width:174mm; min-height:16mm; padding-left:5.4mm; color:var(--muted); font-size:7.2pt; line-height:1.35; z-index:2;
+    }
+    .notice::before { content:""; position:absolute; left:0; top:0; bottom:0; width:1.3mm; background:var(--kermit-sage); }
+  </style>
+</head>
+<body>
+
+  <section class="page cover" aria-label="Berlin 100 kapak sayfası">
+    <div class="cover-stripe"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logosu" />
+    <div class="top-note"><strong>TEKNİK BİLGİ FÖYÜ</strong>TDS-SK-BERLIN100-TR<br>Rev. 01 / 05.06.2026</div>
+
+    <div class="hero-panel">
+      <div class="hero-copy">
+        <div class="hero-kicker">TAŞ POLİMER KOMPOZİT<br>SÜPÜRGELİK</div>
+        <div class="hero-name">Berlin<br>100</div>
+        <div class="hero-desc">İç mekân süpürgelik profili;<br>temiz duvar-zemin<br>geçişleri, gizli kablo kanalı<br>ve %100 sudan/nemden<br>etkilenmeyen yapısıyla<br>hızlı uygulama sağlar.</div>
+      </div>
+      <div class="cover-pills">
+        <div class="cover-pill">Türk Malı</div>
+        <div class="cover-pill">Taş Polimer Kompozit</div>
+        <div class="cover-pill">Esnek kenarlar / conta</div>
+        <div class="cover-pill">Gizli kablo kanalı</div>
+      </div>
+      <div class="product-card"></div>
+      <div class="height-badge"><strong>100 mm</strong><span>nominal yükseklik</span></div>
+      <img class="product-img" src="assets/berlin-100-product.jpg" alt="Berlin 100 süpürgelik ürün fotoğrafı" />
+      <div class="stats-row">
+        <div class="stat-card"><strong>22 mm</strong><span>derinlik</span></div>
+        <div class="stat-card"><strong>1.8</strong><span>g/cm³ beyan edilen<br>yoğunluk</span></div>
+        <div class="stat-card"><strong>Sınıf D</strong><span>yangına tepki sınıfı</span></div>
+        <div class="stat-card"><strong>&lt;0.3%</strong><span>hacimce su emme</span></div>
+      </div>
+    </div>
+
+    <div class="cover-benefits">
+      <article class="mini-card"><h3>Esnek kenar contası</h3><p>Yamuk duvar ve zeminden<br>kaynaklanan hataları esnek<br>kenarlarıyla örter.</p></article>
+      <article class="mini-card"><h3>Kablo kanalı</h3><p>Yerel elektrik kurallarına<br>bağlı olarak düzenli kablo<br>geçişi için gizli arka kanal.</p></article>
+      <article class="mini-card"><h3>Mat yüzey</h3><p>Modern ve sade iç mekân<br>detayları için düşük<br>parlaklıkta yüzey görünümü.</p></article>
+      <article class="mini-card"><h3>Kurşunsuz</h3><p>Taş Polimer Kompozit<br>yapı kurşunsuz beyan<br>edilir ve geri dönüşüm<br>süreçlerine uygundur.</p></article>
+    </div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Cumhuriyet Mah. Cihan Sok. No:4/1, Çayırova, Kocaeli, Türkiye - info@kermit.com.tr - +90 262 658 9729</div><div class="page-no">1 / 4</div></footer>
+  </section>
+
+  <section class="page" aria-label="Teknik performans sayfası">
+    <div class="orb"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logosu" />
+    <div class="top-note"><strong>BERLIN 100</strong>Taş Polimer Kompozit Süpürgelik<br>Teknik performans</div>
+
+    <div class="kicker">ÜRÜN YAPISI</div>
+    <h1 class="section-title">Esnek temas kenarlarına sahip üç katmanlı kompozit profil.</h1>
+
+    <div class="construction-card"></div>
+    <img class="profile-img" src="assets/berlin-100-product.jpg" alt="Berlin 100 profil ölçüleri" />
+    <div class="construction-text">Profil; rijit Taş Polimer Kompozit gövdeyi, ko-ekstrüde<br>yüzey ve esnek kenar contalarıyla birleştirir. Duvar-zemin<br>birleşiminde temiz temas sağlar ve günlük kullanıma dayanıklıdır.</div>
+    <div class="tag-row"><span class="tag">100 mm yükseklik</span><span class="tag wide">22 mm derinlik</span><span class="tag">Esnek kenar contası</span></div>
+    <div class="tag-row second"><span class="tag">Kablo kanalı</span>
+          <span class="tag">Mat yüzey</span></div>
+
+    <div class="kicker spec-kicker">BEYAN EDİLEN TEKNİK ÖZELLİKLER</div>
+    <div class="spec-table-wrap">
+      <table class="spec-table" aria-label="Beyan edilen teknik özellikler">
+        <colgroup><col><col><col></colgroup>
+        <thead><tr><th>Özellik</th><th>Referans / yöntem</th><th>Beyan edilen değer</th></tr></thead>
+        <tbody>
+          <tr><td>Ürün modeli</td><td>Dahili tanım</td><td>Berlin 100</td></tr>
+          <tr><td>Profil tipi</td><td>Ürün kategorisi</td><td>Taş Polimer Kompozit Süpürgelik</td></tr>
+          <tr><td>Nominal yükseklik</td><td>Profil ölçüsü</td><td>100 mm</td></tr>
+          <tr><td>Derinlik</td><td>Profil ölçüsü</td><td>22 mm</td></tr>
+          <tr><td>Kimyasal yapı</td><td>Malzeme beyanı</td><td>Taş Polimer Kompozit</td></tr>
+          <tr><td>Yoğunluk</td><td>Beyan edilen performans</td><td>1.8 g/cm³</td></tr>
+          <tr><td>Basınç altında çökme</td><td>Beyan edilen performans</td><td>0.3 mm</td></tr>
+          <tr><td>Vicat yumuşama sıcaklığı</td><td>TS EN 13245-1</td><td>68.3 °C</td></tr>
+          <tr><td>Çekme-darbe dayanımı</td><td>TS EN ISO 8256</td><td>179 kJ/m²</td></tr>
+          <tr><td>Isı destekli şekillendirme</td><td>Uygulama yöntemi</td><td>Kavisli duvarlarda ısıyla form verilebilir</td></tr>
+          <tr><td>Su emme - tam daldırma</td><td>Beyan edilen performans</td><td>&lt; 0.3% hacimce</td></tr>
+          <tr><td>Havadaki neme dayanım</td><td>Beyan edilen performans</td><td>Etkilenmez (&lt; 0.04%)</td></tr>
+          <tr><td>Yangına tepki sınıfı</td><td>TS EN 11925:2020-07</td><td>D</td></tr>
+          <tr><td>Isıda boyutsal değişim</td><td>+80 ± 2 °C</td><td>Maks. 2%</td></tr>
+          <tr><td>Kurşun içeriği</td><td>Malzeme notu</td><td>Kurşunsuz</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Beyan edilen değerler Berlin 100 için üretici verileridir; yeni testler veya ürün<br>revizyonları sonrasında güncellenebilir.</div><div class="page-no">2 / 4</div></footer>
+  </section>
+
+  <section class="page" aria-label="Özellikler, uygulama alanları ve uygunluk sayfası">
+    <div class="orb"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logosu" />
+    <div class="top-note"><strong>BERLIN 100</strong>Özellikler, uygulama alanları ve uygunluk</div>
+
+    <div class="kicker">ÜRÜN ÖZELLİKLERİ</div>
+    <h1 class="section-title">Hızlı ve temiz montaj için teknik avantajlar.</h1>
+
+    <div class="features-grid">
+      <article class="feature-card"><img src="assets/icons_pdfmethod/water-resistant.png" alt="Su geçirmezlik ikonu"><h3>Su geçirmez</h3><p>%100 sudan ve<br>nemden etkilenmez.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/multiple-colors.png" alt="Renk seçenekleri ikonu"><h3>Renk seçenekleri</h3><p>Zemin ve duvar<br>kaplamalarıyla uyumlu<br>renk seçenekleri.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/cable-concealment.png" alt="Kablo gizleme ikonu"><h3>Kablo gizleme</h3><p>Yerel kurallara bağlı<br>TV/elektrik kablosu için<br>gizli arka kanal.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/mitre-cutting.png" alt="45 derece gönye kesim ikonu"><h3>45° gönye kesim</h3><p>Gönye testere veya<br>uyumlu aksesuarlarla<br>temiz köşe geçişleri.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/modern-profile.png" alt="Modern profil ikonu"><h3>Modern profil</h3><p>Çağdaş iç mekânlar<br>için düz ve minimal<br>görsel çizgi.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/impact-resistant.png" alt="Darbeye dayanıklılık ikonu"><h3>Darbeye dayanıklı</h3><p>Kompozit çekirdek,<br>günlük iç mekân<br>dayanımı sağlar.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/matt-surface.png" alt="Mat yüzey ikonu"><h3>Mat yüzey</h3><p>Düşük parlaklıkta,<br>rafine ve yansımasız<br>görünüm.</p></article>
+      <article class="feature-card short"><img src="assets/icons_pdfmethod/easy-installation.png" alt="Kolay montaj ikonu"><h3>Kolay montaj</h3><p>Hızlı saha montajı için<br>uygulama dostu profil.</p></article>
+      <article class="feature-card short"><img src="assets/icons_pdfmethod/dust-dirt-barrier.png" alt="Toz ve kir bariyeri ikonu"><h3>Toz + kir bariyeri</h3><p>Esnek kenarlar<br>görünür duvar-zemin<br>boşluklarını kapatır.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/flexible-edges.png" alt="Esnek kenarlar ikonu"><h3>Esnek kenarlar</h3><p>Esnek kenarlar<br>küçük yüzey<br>bozukluklarına uyum sağlar.</p></article>
+    </div>
+
+    <article class="info-card left"><h3>Uygulama alanları</h3><p>Yaygın zemin kaplamaları ve<br>duvar-zemin geçişleri için tasarlanmıştır.</p><div class="finish-tags"><span>Seramik</span><span>Halı</span><span>Vinil</span><span>Parke</span><span>SPC / LVT</span></div></article>
+    <article class="info-card right"><h3>Aksesuarlar ve bitiş detayları</h3><p>Renk uyumlu köşe parçaları,<br>bitiş kapakları ve bağlantılar<br>uygun yerlerde planlanmalıdır.<br>Aksesuar yoksa hassas 45°<br>gönye kesim uygulanmalıdır.</p></article>
+
+    <div class="compliance-row">
+      <article class="compliance-card"><h3>EN 13245-2</h3><p>Amaçlanan kullanım ve<br>temel teknik şartlar için<br>EN 13245-2:2008<br>referans alınmıştır.</p></article>
+      <article class="compliance-card"><h3>AVCP Sistem 4</h3><p>Performans değişmezliği<br>değerlendirme ve doğrulaması<br>AVCP Sistem 4 kapsamında<br>beyan edilmiştir.</p></article>
+      <article class="compliance-card"><h3>Yangın sınıfı D</h3><p>Yangına tepki sınıfı: D.<br>Kaynak teknik dokümanda<br>TS EN 11925:2020-07<br>standardına referans verilmiştir.</p></article>
+    </div>
+
+    <div class="desc-row">
+      <article class="desc-card"><h3>Ürün açıklaması</h3><p>Kermit Berlin 100; dayanıklı yüzeye, rijit<br>kompozit çekirdeğe ve duvar-zemin temasını<br>temizleyen esnek kenar contalarına sahip yüksek<br>performanslı kompozit süpürgelik profilidir.</p></article>
+      <article class="desc-card"><h3>Sürdürülebilirlik notu</h3><p>Ürün kurşunsuz ve geri dönüştürülebilir olarak<br>beyan edilir. Bu föy, ilgili beyan veya belirli ürün<br>partisine ait sertifika ile desteklenmeyen geniş<br>çevresel iddialardan kaçınır.</p></article>
+    </div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Aksesuarlar, sabitleme yöntemi ve saha detayları proje koşullarına ve güncel Kermit<br>montaj kılavuzuna göre teyit edilmelidir.</div><div class="page-no">3 / 4</div></footer>
+  </section>
+
+  <section class="page" aria-label="Montaj, bakım ve doküman kontrolü sayfası">
+    <div class="orb"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logosu" />
+    <div class="top-note"><strong>BERLIN 100</strong>Montaj, bakım ve doküman kontrolü</div>
+
+    <div class="kicker">MONTAJ KILAVUZU</div>
+    <h1 class="section-title">Temiz yüzey, hassas kesim, doğru sabitleme.</h1>
+
+    <div class="steps-row">
+      <article class="step-card"><span class="num">01</span><h3>Şartlandırma</h3><p>Profilleri montaj öncesinde<br>uygulama alanında bekletin.<br>Düz konumda ve ısı<br>kaynaklarından uzakta tutun.</p></article>
+      <article class="step-card"><span class="num">02</span><h3>Hazırlık</h3><p>Yüzey temiz, kuru, sağlam,<br>tozsuz ve duvar-zemin<br>birleşimi boyunca mümkün<br>olduğunca düz olmalıdır.</p></article>
+      <article class="step-card"><span class="num">03</span><h3>Kesim</h3><p>Profilleri uygun gönye<br>testereyle kesin. İç/dış<br>köşelerde temiz sonuç için<br>45° kesim veya uyumlu<br>aksesuar kullanın.</p></article>
+      <article class="step-card"><span class="num">04</span><h3>Sabitleme</h3><p>Proje koşullarına göre<br>uyumlu yapıştırıcı veya<br>mekanik sabitleme kullanın.<br>Esnek kenarların boşluğu<br>kapatması için sıkıca bastırın.</p></article>
+    </div>
+
+    <article class="practice-card"><h3>Önerilen uygulama</h3><ul><li><strong>Aksesuar planı:</strong> köşe parçaları, bitiş kapakları ve bağlantı<br>elemanları profil ve renkle uyumlu olmalıdır.</li><li><strong>Isı destekli büküm:</strong> profili ısıtıp kavisli<br>duvarlara form verin; önemli bir ürün avantajıdır.</li><li><strong>Nötr temizlik kullanın:</strong> yumuşak bez ve pH nötr<br>temizleyici ile silin.</li><li><strong>Numunede test edin:</strong> yapıştırıcı veya temizlik<br>kimyasallarını geniş alanda uygulamadan önce doğrulayın.</li></ul></article>
+    <article class="avoid-card"><h3>Kaçınılması gerekenler</h3><ul><li>Islak, tozlu, yağlı veya gevşek yüzeylere<br>sabitlemeyin; yapışma alanını önce temizleyip kurutun.</li><li>Aşındırıcı pedler, agresif solventler veya<br>yüksek alkali temizleyiciler kullanmayın.</li><li>Depolanan profilleri doğrudan güneş ışığına,<br>deformasyon yüklerine veya yüksek ısıya maruz bırakmayın.</li></ul></article>
+
+    <div class="storage-row">
+      <article class="storage-card"><h3>Depolama</h3><p>Orijinal ambalajında yatay<br>şekilde depolayın; toz,<br>doğrudan güneş ve aşırı<br>sıcaklık değişiminden koruyun.</p></article>
+      <article class="storage-card"><h3>Bakım</h3><p>Rutin temizlik için nemli<br>silme yeterlidir. Kirleri,<br>esnek kenarlar ve birleşimlerde<br>sertleşmeden önce temizleyin.</p></article>
+      <article class="storage-card"><h3>Sınırlamalar</h3><p>Yalnızca iç mekân bitiş profilidir.<br>Yapısal değildir ve taşıyıcı<br>performans gereken yerlerde<br>kullanılmamalıdır.</p></article>
+    </div>
+
+    <div class="kicker doc-kicker">DOKÜMAN KONTROLÜ</div>
+    <div class="doc-row">
+      <article class="doc-card"><span class="label">ÜRETİCİ</span><strong>Kermit Plastik San. ve Tic.<br>A.Ş.</strong></article>
+      <article class="doc-card"><span class="label">ÜRÜN MODELİ</span><strong>Berlin 100</strong></article>
+      <article class="doc-card"><span class="label">DOKÜMAN</span><strong>TDS-SK-BERLIN100-TR</strong></article>
+      <article class="doc-card"><span class="label">REVİZYON TARİHİ</span><strong>05.06.2026</strong></article>
+    </div>
+    <div class="notice">Bu teknik bilgi föyü, beyan edilen ürün bilgilerini ve montaj yönlendirmelerini özetler. Proje şartnameleri, yerel mevzuat,<br>yangın sınıflandırması gereklilikleri ve güncel montaj kılavuzu ilgili durumlarda önceliklidir.</div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Cumhuriyet Mah. Cihan Sok. No:4/1, Çayırova, Kocaeli, Türkiye - info@kermit.com.tr - +90 262 658 9729</div><div class="page-no">4 / 4</div></footer>
+  </section>
+
+</body>
+</html>

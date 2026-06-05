@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kermit Optima 90 Stone Polymer Composite Skirting Board TDS</title>
+  <style>
+    /* Uses Kermit site font stack: Inter / Montserrat. Load these in your website theme if needed. */
+
+    :root {
+      --kermit-green: #2d422f;
+      --kermit-green-deep: #2f3933;
+      --kermit-sage: #89ad8c;
+      --kermit-sage-soft: #dce6dd;
+      --kermit-border: #dce3de;
+      --kermit-pale: #f0f2f0;
+      --kermit-pale-2: #f7faf7;
+      --kermit-pale-3: #e6ebe8;
+      --text: #3d4942;
+      --muted: #66736c;
+      --avoid-bg: #fbf8f6;
+      --practice-bg: #f4fbf5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #e8ebe8;
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    body { padding: 12mm 0; }
+
+    .page {
+      position: relative;
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto 12mm auto;
+      background: white;
+      overflow: hidden;
+      box-shadow: 0 6mm 20mm rgba(20, 35, 25, 0.16);
+    }
+
+    @page { size: A4; margin: 0; }
+
+    @media print {
+      html, body { background: white; padding: 0; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+      }
+      .page:last-child { page-break-after: auto; break-after: auto; }
+    }
+
+    .logo {
+      position: absolute;
+      left: 18mm;
+      top: 15mm;
+      width: 44mm;
+      height: auto;
+      z-index: 2;
+    }
+
+    .top-note {
+      position: absolute;
+      top: 15.2mm;
+      right: 18mm;
+      width: 70mm;
+      text-align: right;
+      color: var(--muted);
+      font-size: 8pt;
+      line-height: 1.45;
+      z-index: 2;
+    }
+    .top-note strong { display: block; color: var(--kermit-green); font-weight: 900; }
+
+    .footer {
+      position: absolute;
+      left: 18mm;
+      right: 18mm;
+      bottom: 10mm;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8mm;
+      padding-top: 3mm;
+      border-top: 0.35mm solid var(--kermit-border);
+      color: var(--muted);
+      font-size: 7pt;
+      line-height: 1.2;
+      z-index: 4;
+    }
+    .footer strong { color: var(--kermit-green); font-weight: 900; }
+    .page-no {
+      flex: 0 0 15mm;
+      text-align: right;
+      color: var(--kermit-green);
+      font-weight: 900;
+    }
+
+    .kicker {
+      position: absolute;
+      left: 18mm;
+      top: 38.3mm;
+      font-size: 8.2pt;
+      line-height: 1.2;
+      letter-spacing: 1.7pt;
+      color: var(--kermit-sage);
+      font-weight: 900;
+    }
+    .section-title {
+      position: absolute;
+      left: 18mm;
+      top: 44.5mm;
+      margin: 0;
+      font-size: 17pt;
+      line-height: 1.18;
+      color: var(--kermit-green);
+      font-family: Inter, Montserrat, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .orb {
+      position: absolute;
+      left: 132mm;
+      top: 175mm;
+      width: 112mm;
+      height: 112mm;
+      background: #f0f2f0;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .rounded { border: 0.35mm solid var(--kermit-border); border-radius: 5mm; }
+
+    /* Page 1 */
+    .cover-stripe { position:absolute; left:0; top:0; bottom:0; width:7mm; background:var(--kermit-green); }
+    .hero-panel {
+      position: absolute;
+      left: 18mm;
+      top: 38mm;
+      width: 174mm;
+      height: 165.3mm;
+      background: var(--kermit-sage-soft);
+      border: 0.35mm solid var(--kermit-border);
+      border-radius: 12mm;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .hero-panel::before {
+      content:"";
+      position:absolute;
+      right:-23mm;
+      top:-17.7mm;
+      width:88mm;
+      height:88mm;
+      border-radius:50%;
+      background:var(--kermit-sage);
+      opacity:.33;
+      z-index:0;
+    }
+    .hero-copy { position:absolute; left: 9.8mm; top: 0; width: 54mm; z-index:2; }
+    .hero-kicker {
+      position:absolute; left:0; top:10.1mm; font-size:7.4pt; line-height:1.35; letter-spacing:0.85pt; color:var(--kermit-sage); font-weight:900; white-space:nowrap;
+    }
+    .hero-name {
+      position:absolute; left:0; top:19.0mm;
+      color:var(--kermit-green);
+      font-family: Inter, Montserrat, sans-serif;
+      font-weight:900;
+      font-size:33pt;
+      line-height:.82;
+      letter-spacing:-0.07em;
+    }
+    .hero-desc {
+      position:absolute; left:0; top:47.5mm;
+      font-size:10.1pt;
+      line-height:1.42;
+      color:var(--text);
+      max-width:44mm;
+    }
+    .cover-pills { position:absolute; left:9.8mm; top:89.4mm; display:flex; flex-direction:column; gap:3.2mm; z-index:3; }
+    .cover-pill {
+      width:max-content;
+      min-width: 33mm;
+      padding:2.2mm 7mm;
+      border:0.35mm solid var(--kermit-border);
+      border-radius:9mm;
+      background:white;
+      color:var(--kermit-green);
+      font-size:7.4pt;
+      line-height:1;
+      font-weight:800;
+      box-shadow: inset 0 0 0 0.45mm #f8faf8;
+    }
+    .product-card {
+      position:absolute;
+      left:62.65mm;
+      top:9.85mm;
+      width:101.5mm;
+      height:116.6mm;
+      background:white;
+      border:0.35mm solid var(--kermit-border);
+      border-radius:8mm;
+      z-index:1;
+    }
+    .height-badge {
+      position:absolute;
+      left:119.9mm;
+      top:14.1mm;
+      width:40mm;
+      height:16.3mm;
+      padding:3.2mm 4mm;
+      background:white;
+      border:0.35mm solid var(--kermit-border);
+      border-radius:4mm;
+      z-index:3;
+    }
+    .height-badge strong { display:block; font-size:17.5pt; line-height:.9; color:var(--kermit-green); font-weight:900; letter-spacing:-.04em; }
+    .height-badge span { display:block; margin-top:1.4mm; font-size:7.2pt; color:var(--muted); }
+    .product-img { position:absolute; left:66mm; top:39.5mm; width:95mm; height:auto; z-index:2; }
+    .stats-row {
+      position:absolute;
+      left:9.8mm;
+      top:133.4mm;
+      display:grid;
+      grid-template-columns: repeat(4, 36.3mm);
+      gap:5.4mm;
+      z-index:3;
+    }
+    .stat-card { height:22mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:3.8mm; padding:4.1mm 3.6mm; }
+    .stat-card strong { display:block; font-size:14.5pt; line-height:.85; color:var(--kermit-green); font-weight:900; letter-spacing:-.04em; }
+    .stat-card span { display:block; margin-top:2.2mm; color:var(--muted); font-size:6.9pt; line-height:1.2; }
+    .cover-benefits {
+      position:absolute; left:18mm; top:210.3mm; width:174mm;
+      display:grid; grid-template-columns:repeat(3, 56mm); gap:3mm; z-index:2;
+    }
+    .mini-card { height:30mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:4.6mm; padding:5.5mm 4.2mm; }
+    .mini-card h3 { margin:0 0 2.2mm 0; font-size:9.5pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .mini-card p { margin:0; font-size:7.2pt; line-height:1.28; color:var(--muted); }
+
+    /* Page 2 */
+    .construction-card {
+      position:absolute; left:18mm; top:55.4mm; width:174mm; height:58.5mm;
+      background:white; border:0.35mm solid var(--kermit-border); border-radius:5mm; z-index:2;
+    }
+    .profile-img { position:absolute; left:25.4mm; top:59.65mm; width:43.75mm; height:auto; z-index:3; }
+    .construction-text { position:absolute; left:77.3mm; top:69.5mm; width:110mm; font-size:8.7pt; line-height:1.32; color:var(--text); z-index:3; }
+    .tag-row { position:absolute; left:77.3mm; top:85.4mm; display:flex; gap:5mm; z-index:3; }
+    .tag-row.second { top:93.9mm; gap:4.2mm; }
+    .tag {
+      width:28mm; padding:2.2mm 0; background:#e6f3e8; border-radius:9mm; text-align:center;
+      color:var(--kermit-green); font-size:7.1pt; line-height:1; font-weight:800;
+    }
+    .tag.wide { width:31mm; }
+    .spec-kicker { top:120.7mm; }
+    .spec-table-wrap {
+      position:absolute; left:18mm; top:126.9mm; width:174mm; z-index:2;
+      border:0.35mm solid var(--kermit-border); border-radius:5mm; overflow:hidden;
+    }
+    table.spec-table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:7.3pt; line-height:1; }
+    table.spec-table col:nth-child(1) { width:68mm; }
+    table.spec-table col:nth-child(2) { width:54mm; }
+    table.spec-table col:nth-child(3) { width:52mm; }
+    table.spec-table th {
+      height:7.45mm; padding:0 3mm; text-align:left; vertical-align:middle; background:var(--kermit-green); color:white; font-size:7.1pt; font-weight:900;
+    }
+    table.spec-table td { height:6.86mm; padding:0 3mm; vertical-align:middle; color:var(--muted); border-bottom:0.2mm solid var(--kermit-border); }
+    table.spec-table tr:nth-child(even) td { background:#f7faf7; }
+    table.spec-table tr:nth-child(odd) td { background:#e6ebe8; }
+    table.spec-table td:first-child, table.spec-table td:last-child { color:var(--kermit-green); font-weight:800; }
+    table.spec-table tr:last-child td { border-bottom:none; }
+
+    /* Page 3 */
+    .features-grid {
+      position:absolute; left:18mm; top:55.4mm; width:174mm; z-index:2;
+      display:grid; grid-template-columns:repeat(5, 32.4mm); grid-auto-rows:32.2mm; gap:3.0mm 3.05mm;
+    }
+    .feature-card { background:white; border:0.35mm solid var(--kermit-border); border-radius:4.5mm; text-align:center; padding-top:3.25mm; }
+    .feature-card img { width:16.6mm; height:auto; display:block; margin:0 auto 1.7mm; image-rendering:auto; }
+    .feature-card h3 { margin:0; font-size:7.3pt; line-height:1.05; color:var(--kermit-green); font-weight:900; }
+    .feature-card p { margin:1.35mm auto 0; max-width:26mm; font-size:6.9pt; line-height:1.13; color:var(--muted); }
+    .feature-card.short p { max-width:24mm; }
+    .feature-card.compact img { width:13.2mm; margin-bottom:1mm; }
+    .feature-card.compact h3 { font-size:6.9pt; }
+    .feature-card.compact p { margin-top:1mm; font-size:6.6pt; line-height:1.05; max-width:24mm; }
+    .info-card {
+      position:absolute; top:129.2mm; width:84.8mm; height:44.2mm;
+      background:#f7f8f7; border:0.35mm solid var(--kermit-border); border-radius:5mm; padding:4.3mm; z-index:2;
+    }
+    .info-card.left { left:18mm; } .info-card.right { left:107.25mm; }
+    .info-card h3 { margin:0 0 4mm 0; font-size:11pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .info-card p { margin:0; font-size:8.7pt; line-height:1.35; color:var(--text); }
+    .finish-tags { display:grid; grid-template-columns:repeat(6, 1fr); gap:1.4mm 1.6mm; margin-top:2.8mm; }
+    .finish-tags span { background:white; border:0.35mm solid var(--kermit-border); border-radius:8mm; color:var(--kermit-green); font-size:6.3pt; font-weight:900; text-align:center; padding:1.45mm 0; box-shadow: inset 0 0 0 .45mm #fafafa; white-space:nowrap; }
+    .finish-tags span:nth-child(-n+3) { grid-column:span 2; }
+    .finish-tags span:nth-child(4) { grid-column:2 / span 2; }
+    .finish-tags span:nth-child(5) { grid-column:4 / span 2; }
+    .compliance-row { position:absolute; left:18mm; top:179.9mm; display:grid; grid-template-columns:repeat(3,56mm); gap:3.0mm; z-index:2; }
+    .compliance-card { height:32.6mm; background:var(--kermit-green); color:white; border-radius:4mm; padding:4.2mm; }
+    .compliance-card h3 { margin:0 0 4mm 0; color:white; font-size:11pt; line-height:1; font-weight:800; letter-spacing:-.03em; }
+    .compliance-card p { margin:0; color:white; font-size:8.7pt; line-height:1.35; opacity:.92; }
+    .desc-row { position:absolute; left:18mm; top:219.1mm; display:grid; grid-template-columns:repeat(2,84.8mm); gap:4.5mm; z-index:2; }
+    .desc-card { height:32.75mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:5mm; padding:4.2mm; }
+    .desc-card h3 { margin:0 0 4mm 0; font-size:11pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .desc-card p { margin:0; font-size:8.7pt; line-height:1.35; color:var(--text); }
+
+    /* Page 4 */
+    .steps-row { position:absolute; left:18mm; top:55.4mm; display:grid; grid-template-columns:repeat(4,41.25mm); gap:3mm; z-index:2; }
+    .step-card { position:relative; height:36mm; background:white; border:0.35mm solid var(--kermit-border); border-radius:4.6mm; padding:4mm 3.2mm; }
+    .step-card h3 { margin:0 0 3mm; font-size:8pt; line-height:1; color:var(--kermit-green); font-weight:800; }
+    .step-card p { margin:0; font-size:7pt; line-height:1.32; color:var(--muted); }
+    .step-card .num { position:absolute; right:4mm; top:3mm; color:#cbd7ce; font-size:16.5pt; line-height:1; font-weight:900; letter-spacing:-.05em; }
+    .practice-card, .avoid-card {
+      position:absolute; top:97.9mm; width:85mm; height:51mm; border:0.35mm solid var(--kermit-border); border-radius:5mm; padding:4.2mm; z-index:2;
+    }
+    .practice-card { left:18mm; background:var(--practice-bg); }
+    .avoid-card { left:107mm; background:var(--avoid-bg); }
+    .practice-card h3, .avoid-card h3 { margin:0 0 2.5mm; font-size:10.4pt; line-height:1; color:var(--kermit-green); font-weight:800; letter-spacing:-.02em; }
+    .practice-card ul, .avoid-card ul { margin:0; padding-left:5mm; font-size:8.1pt; line-height:1.25; color:var(--text); }
+    .practice-card li, .avoid-card li { margin:0 0 1.45mm 0; }
+    .practice-card strong { color:var(--kermit-green); font-weight:800; }
+    .storage-row { position:absolute; left:18mm; top:155.4mm; display:grid; grid-template-columns:repeat(3,56mm); gap:3mm; z-index:2; }
+    .storage-card { height:32.7mm; background:#f7f8f7; border:0.35mm solid var(--kermit-border); border-radius:4.5mm; padding:4.2mm; }
+    .storage-card h3 { margin:0 0 4mm; color:var(--kermit-green); font-size:11pt; line-height:1; font-weight:800; letter-spacing:-.02em; }
+    .storage-card p { margin:0; font-size:8.7pt; line-height:1.35; color:var(--text); }
+    .doc-kicker { top:195mm; }
+    .doc-row { position:absolute; left:18mm; top:201.2mm; display:grid; grid-template-columns:repeat(4,41.85mm); gap:2.2mm; z-index:2; }
+    .doc-card { height:16mm; background:#f7f8f7; border:0.35mm solid var(--kermit-border); border-radius:3.5mm; padding:3mm; }
+    .doc-card .label { display:block; color:var(--muted); font-size:6.4pt; line-height:1; letter-spacing:.8pt; }
+    .doc-card strong { display:block; margin-top:1.5mm; color:var(--kermit-green); font-size:7.3pt; line-height:1.05; font-weight:900; }
+    .notice {
+      position:absolute; left:18mm; top:220mm; width:174mm; min-height:16mm; padding-left:5.4mm; color:var(--muted); font-size:7.2pt; line-height:1.35; z-index:2;
+    }
+    .notice::before { content:""; position:absolute; left:0; top:0; bottom:0; width:1.3mm; background:var(--kermit-sage); }
+  </style>
+</head>
+<body>
+
+  <section class="page cover" aria-label="Optima 90 cover page">
+    <div class="cover-stripe"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logo" />
+    <div class="top-note"><strong>TECHNICAL DATA SHEET</strong>TDS-SK-OPTIMA90-EN<br>Rev. 01 / 05.06.2026</div>
+
+    <div class="hero-panel">
+      <div class="hero-copy">
+        <div class="hero-kicker">STONE POLYMER COMPOSITE<br>SKIRTING BOARD</div>
+        <div class="hero-name">Optima<br>90</div>
+        <div class="hero-desc">Interior skirting profile<br>engineered for clean<br>wall-floor transitions, low<br>moisture uptake and fast<br>finishing in residential<br>and commercial spaces.</div>
+      </div>
+      <div class="cover-pills">
+        <div class="cover-pill">Made in Türkiye</div>
+        <div class="cover-pill">Stone Polymer Composite</div>
+        <div class="cover-pill">Soft Flexible Edges</div>
+      </div>
+      <div class="product-card"></div>
+      <div class="height-badge"><strong>90 mm</strong><span>nominal height</span></div>
+      <img class="product-img" src="assets/optima-90-product.jpg" alt="Optima 90 skirting board product photo" />
+      <div class="stats-row">
+        <div class="stat-card"><strong>18 mm</strong><span>nominal thickness</span></div>
+        <div class="stat-card"><strong>1.8</strong><span>g/cm³ declared density</span></div>
+        <div class="stat-card"><strong>Bfl-S1</strong><span>reaction to fire class</span></div>
+        <div class="stat-card"><strong>&lt;0.3%</strong><span>water absorption by<br>volume</span></div>
+      </div>
+    </div>
+
+    <div class="cover-benefits">
+      <article class="mini-card"><h3>Soft edge seal</h3><p>Flexible co-extruded lips<br>help mask minor<br>irregularities at the wall and<br>floor joint.</p></article>
+      <article class="mini-card"><h3>Embossed surface</h3><p>Tactile embossed texture<br>for refined interior<br>detailing.</p></article>
+      <article class="mini-card"><h3>Pb-free</h3><p>Stone Polymer Composite<br>construction declared Pb-free and<br>suitable for responsible<br>recycling streams.</p></article>
+    </div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Cumhuriyet Mah. Cihan Sok. No:4/1, Çayırova, Kocaeli, Türkiye - info@kermit.com.tr - +90 262 658 9729</div><div class="page-no">1 / 4</div></footer>
+  </section>
+
+  <section class="page" aria-label="Technical performance page">
+    <div class="orb"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logo" />
+    <div class="top-note"><strong>OPTIMA 90</strong>Stone Polymer Composite Skirting Board<br>Technical performance</div>
+
+    <div class="kicker">PRODUCT CONSTRUCTION</div>
+    <h1 class="section-title">Three-layer composite profile with flexible contact edges.</h1>
+
+    <div class="construction-card"></div>
+    <img class="profile-img" src="assets/optima-90-product.jpg" alt="Optima 90 skirting board product photo" />
+    <div class="construction-text">The profile combines a rigid Stone Polymer Composite body with a co-extruded<br>surface and soft edge lips for clean contact at the wall and floor junction.<br>The rigid body supports everyday interior finishing durability.</div>
+    <div class="tag-row"><span class="tag">90 mm height</span><span class="tag wide">18 mm thickness</span><span class="tag">Soft edge lips</span></div>
+    <div class="tag-row second"><span class="tag">Embossed surface</span></div>
+
+    <div class="kicker spec-kicker">DECLARED TECHNICAL SPECIFICATIONS</div>
+    <div class="spec-table-wrap">
+      <table class="spec-table" aria-label="Declared technical specifications">
+        <colgroup><col><col><col></colgroup>
+        <thead><tr><th>Property</th><th>Reference / method</th><th>Declared value</th></tr></thead>
+        <tbody>
+          <tr><td>Product model</td><td>Internal designation</td><td>Optima 90</td></tr>
+          <tr><td>Profile type</td><td>Product category</td><td>Stone Polymer Composite Skirting Board</td></tr>
+          <tr><td>Nominal height</td><td>Profile dimension</td><td>90 mm</td></tr>
+          <tr><td>Nominal thickness</td><td>Profile dimension</td><td>18 mm</td></tr>
+          <tr><td>Chemical structure</td><td>Material declaration</td><td>Stone Polymer Composite</td></tr>
+          <tr><td>Density</td><td>Declared performance</td><td>1.8 g/cm³</td></tr>
+          <tr><td>Indentation under pressure</td><td>Declared performance</td><td>0.3 mm</td></tr>
+          <tr><td>Vicat softening temperature</td><td>TS EN 13245-1</td><td>68.3 °C</td></tr>
+          <tr><td>Tensile-impact strength</td><td>TS EN ISO 8256</td><td>179 kJ/m²</td></tr>
+          <tr><td>Heat-assisted forming</td><td>Installation method</td><td>Can be heat-formed for curved walls</td></tr>
+          <tr><td>Water absorption - full immersion</td><td>Declared performance</td><td>&lt; 0.3% by volume</td></tr>
+          <tr><td>Moisture from air</td><td>Declared performance</td><td>&lt; 0.04%</td></tr>
+          <tr><td>Reaction to fire class</td><td>EN 13501-1</td><td>Bfl-S1</td></tr>
+          <tr><td>Dimensional change at heat</td><td>+80 ± 2 °C</td><td>Max. 2%</td></tr>
+          <tr><td>Lead content</td><td>Material note</td><td>Pb-free</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Declared values are manufacturer data for Optima 90 and may be updated after new testing or product<br>revisions.</div><div class="page-no">2 / 4</div></footer>
+  </section>
+
+  <section class="page" aria-label="Features applications and compliance page">
+    <div class="orb"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logo" />
+    <div class="top-note"><strong>OPTIMA 90</strong>Features, applications and compliance</div>
+
+    <div class="kicker">FEATURE SYSTEM</div>
+    <h1 class="section-title">Technical benefits for fast, clean interior finishing.</h1>
+
+    <div class="features-grid">
+      <article class="feature-card"><img src="assets/icons_pdfmethod/water-resistant.png" alt="Waterproof icon"><h3>Waterproof</h3><p>Humidity-resistant<br>profile with very low<br>water absorption.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/multiple-colors.png" alt="Multiple colors icon"><h3>Multiple colors</h3><p>Color options for<br>coordinated flooring and<br>wall finishes.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/cable-concealment.png" alt="Multi-way installation icon"><h3>Multi-way<br>installation</h3><p>Can be applied with<br>Glue, Screw or Tape</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/mitre-cutting.png" alt="45 degree mitre cutting icon"><h3>45° mitre cutting</h3><p>Clean corners using<br>mitre saw or compatible<br>accessories.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/modern-profile.png" alt="Modern profile icon"><h3>Modern profile</h3><p>Straight, minimal visual<br>line for contemporary<br>interiors.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/impact-resistant.png" alt="Impact resistant icon"><h3>Impact resistant</h3><p>Composite core supports<br>everyday interior<br>durability.</p></article>
+      <article class="feature-card compact"><img src="assets/icons_pdfmethod/embossed-icon.jpg" alt="Embossed surface icon"><h3>Embossed<br>surface</h3><p>Tactile embossed<br>texture.</p></article>
+      <article class="feature-card short"><img src="assets/icons_pdfmethod/easy-installation.png" alt="Easy installation icon"><h3>Easy installation</h3><p>Install-friendly profile for<br>fast site finishing.</p></article>
+      <article class="feature-card short"><img src="assets/icons_pdfmethod/dust-dirt-barrier.png" alt="Dust and dirt barrier icon"><h3>Dust + dirt barrier</h3><p>Soft lips help close<br>visible wall-floor gaps.</p></article>
+      <article class="feature-card"><img src="assets/icons_pdfmethod/flexible-edges.png" alt="Flexible edges icon"><h3>Flexible edges</h3><p>Co-extruded soft lips<br>adapt to minor<br>unevenness.</p></article>
+    </div>
+
+    <article class="info-card left"><h3>Application areas</h3><p>Designed as an interior skirting profile for common<br>floor finishes and wall-floor transitions.</p><div class="finish-tags"><span>Ceramic</span><span>Carpet</span><span>Vinyl</span><span>Parquet</span><span>SPC / LVT</span></div></article>
+    <article class="info-card right"><h3>Accessories and finishing</h3><p>For a complete system, plan color-matched corners,<br>end caps and connectors where applicable. Use<br>accurate 45° mitre cuts when accessories are not<br>used or where the design requires a continuous<br>visual line.</p></article>
+
+    <div class="compliance-row">
+      <article class="compliance-card"><h3>EN 13245-2</h3><p>Declared performance<br>references EN 13245-2:2008 for<br>intended use and key<br>specification basis.</p></article>
+      <article class="compliance-card"><h3>AVCP System 4</h3><p>Evaluation and verification of<br>constancy of performance is<br>declared under AVCP System 4.</p></article>
+      <article class="compliance-card"><h3>Fire class Bfl-S1</h3><p>Reaction to fire class: Bfl-S1,<br>referenced to EN 13501-1<br>in the source technical<br>document.</p></article>
+    </div>
+
+    <div class="desc-row">
+      <article class="desc-card"><h3>Product description</h3><p>Kermit Optima 90 is a high-performance composite<br>skirting profile with a durable surface, a rigid<br>composite core and flexible lips for clean contact<br>with the wall and floor.</p></article>
+      <article class="desc-card"><h3>Sustainability note</h3><p>The product is declared Pb-free and recyclable.<br>This sheet avoids broad environmental claims<br>unless supported by the relevant declaration or<br>certification for the specific product batch.</p></article>
+    </div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Accessories, fixing method and site details should be confirmed according to project conditions and the<br>latest Kermit installation guide.</div><div class="page-no">3 / 4</div></footer>
+  </section>
+
+  <section class="page" aria-label="Installation maintenance and document control page">
+    <div class="orb"></div>
+    <img class="logo" src="assets/xref74_261x107.png" alt="Kermit Floor logo" />
+    <div class="top-note"><strong>OPTIMA 90</strong>Installation, maintenance and document control</div>
+
+    <div class="kicker">INSTALLATION GUIDE</div>
+    <h1 class="section-title">Clean substrate, accurate cuts, correct fixing.</h1>
+
+    <div class="steps-row">
+      <article class="step-card"><span class="num">01</span><h3>Condition</h3><p>Store profiles in the<br>installation area before fitting.<br>Keep them flat and away<br>from heat sources.</p></article>
+      <article class="step-card"><span class="num">02</span><h3>Prepare</h3><p>Substrate should be clean,<br>dry, stable, dust-free and as<br>flat as practical along the<br>wall-floor junction.</p></article>
+      <article class="step-card"><span class="num">03</span><h3>Cut</h3><p>Cut profiles with a suitable<br>mitre saw. Use 45° cuts or<br>compatible accessories for<br>neat inside/outside corners.</p></article>
+      <article class="step-card"><span class="num">04</span><h3>Fix</h3><p>Use compatible adhesive or<br>mechanical fixing according<br>to project conditions. Press<br>firmly so soft lips close the<br>gap.</p></article>
+    </div>
+
+    <article class="practice-card"><h3>Recommended practice</h3><ul><li><strong>Plan accessories:</strong> corners, end caps and connectors<br>should match the profile and color.</li><li><strong>Heat-assisted bending:</strong> warm the profile and form it<br>to curved walls; a key product advantage.</li><li><strong>Use neutral cleaning:</strong> wipe with a soft cloth and pH-<br>neutral cleaner.</li><li><strong>Test on sample:</strong> verify adhesive or cleaning<br>agents before large-area application.</li></ul></article>
+    <article class="avoid-card"><h3>Avoid</h3><ul><li>Do not fix to wet, dusty, oily or loose substrates;<br>clean and dry the bonding area first.</li><li>Do not use abrasive pads, aggressive solvents or<br>high-alkaline cleaners.</li><li>Do not expose stored profiles to direct sunlight,<br>deformation loads or high heat.</li></ul></article>
+
+    <div class="storage-row">
+      <article class="storage-card"><h3>Storage</h3><p>Store horizontally in original<br>packaging, protected from<br>dust, direct sun and excessive<br>temperature variation.</p></article>
+      <article class="storage-card"><h3>Maintenance</h3><p>Routine cleaning requires only<br>damp wiping. Remove dirt<br>before it hardens around the<br>soft edges and joints.</p></article>
+      <article class="storage-card"><h3>Limitations</h3><p>Interior finishing profile only. It is<br>not structural and should not be<br>used where load-bearing<br>performance is required.</p></article>
+    </div>
+
+    <div class="kicker doc-kicker">DOCUMENT CONTROL</div>
+    <div class="doc-row">
+      <article class="doc-card"><span class="label">MANUFACTURER</span><strong>Kermit Plastik San. ve Tic.<br>A.Ş.</strong></article>
+      <article class="doc-card"><span class="label">PRODUCT MODEL</span><strong>Optima 90</strong></article>
+      <article class="doc-card"><span class="label">DOCUMENT</span><strong>TDS-SK-OPTIMA90-EN</strong></article>
+      <article class="doc-card"><span class="label">REVISION DATE</span><strong>05.06.2026</strong></article>
+    </div>
+    <div class="notice">This technical data sheet summarizes declared product information and installation guidance. Project specifications, local regulations,<br>electrical rules, fire classification requirements and the latest installation guide take precedence where applicable.</div>
+
+    <footer class="footer"><div><strong>Kermit Floor</strong> - Cumhuriyet Mah. Cihan Sok. No:4/1, Çayırova, Kocaeli, Türkiye - info@kermit.com.tr - +90 262 658 9729</div><div class="page-no">4 / 4</div></footer>
+  </section>
+
+</body>
+</html>
